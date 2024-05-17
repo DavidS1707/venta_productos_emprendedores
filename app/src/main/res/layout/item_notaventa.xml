@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Código de la nota de venta -->
+    <TextView
+        android:id="@+id/txtCodigoNotaVenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Código de Nota de Venta:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtCodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" /> <!-- Tamaño de texto grande para el código -->
+
+    <!-- Nombre del cliente -->
+    <TextView
+        android:id="@+id/txtLabelNombreCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Cliente:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtNombreCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Cantidad -->
+    <TextView
+        android:id="@+id/txtLabelCantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cantidad:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtCantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- ID del producto -->
+    <TextView
+        android:id="@+id/txtLabelIdProducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID del Producto:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtIdProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <!-- Tipo de envío -->
+    <TextView
+        android:id="@+id/txtLabelTipoEnvio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo de Envío:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtTipoEnvio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Tipo de pago -->
+    <TextView
+        android:id="@+id/txtLabelTipoPago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo de Pago:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtTipoPago"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <!-- Botón Eliminar -->
+    <Button
+        android:id="@+id/btnEliminarNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".PRESENTACION.PNotaVenta">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar Nota de Venta"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- EditText para el nombre del cliente -->
+    <EditText
+        android:id="@+id/editTextNombreCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del cliente"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- EditText para la cantidad -->
+    <EditText
+        android:id="@+id/editTextCantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad"
+        android:inputType="number"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Spinner para seleccionar el producto -->
+    <Spinner
+        android:id="@+id/spinnerProductos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- RadioGroup para el tipo de envío -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipo de Envío"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupTipoEnvio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonDelivery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delivery"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonEntregaPersonal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entrega personal"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonRecogerLocal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recoger en el local"/>
+    </RadioGroup>
+
+    <!-- RadioGroup para el tipo de pago -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipo de Pago"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupTipoPago"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonQR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QR"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonEfectivo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Efectivo"/>
+    </RadioGroup>
+
+    <!-- Botón para guardar la nota de venta -->
+    <Button
+        android:id="@+id/btnGuardarNotaVenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- RecyclerView para mostrar las notas de venta existentes -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewNotasVenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
